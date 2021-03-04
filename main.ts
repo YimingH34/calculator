@@ -1,11 +1,14 @@
+// This is the first input, when you press the A button it will increase the A button 
 input.onButtonPressed(Button.A, function () {
     number_2 += 1
     basic.showNumber(number_2)
 })
+// This is the third input. When you tilt left, the second number will increase by 1.
 input.onGesture(Gesture.TiltLeft, function () {
     number_1 += 1
     basic.showNumber(number_1)
 })
+// This is an input to reset everything to 0, that is why you need to give it 6g of force and it will set all of the variables to 0 as well as the screen.
 input.onGesture(Gesture.SixG, function () {
     basic.clearScreen()
     number_1 = 0
@@ -38,10 +41,12 @@ input.onButtonPressed(Button.AB, function () {
     basic.pause(200)
     basic.showNumber(sum)
 })
+// This is the second input, when you press the B button, it will decrease the number by 1.
 input.onButtonPressed(Button.B, function () {
     number_2 += -1
     basic.showNumber(number_2)
 })
+// This is the code that execute when you shake it., it will do the equation. First you will have to input the numbers, then you shake so what happens is that you will first show the first number, then it will display the minus sign then the second number and then an equal sign and it will show the sum.
 input.onGesture(Gesture.Shake, function () {
     subtrace = number_2 + number_1
     basic.showNumber(number_2)
@@ -66,6 +71,7 @@ input.onGesture(Gesture.Shake, function () {
     basic.pause(200)
     basic.showNumber(subtrace)
 })
+// This is the fourth input. When you tilt left, the second number will decrease by 1.
 input.onGesture(Gesture.TiltRight, function () {
     number_1 += -1
     basic.showNumber(number_1)
