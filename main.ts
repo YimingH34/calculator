@@ -49,7 +49,7 @@ input.onGesture(Gesture.Shake, function () {
         . . . . .
         . . . . .
         # # # # #
-        . . # . .
+        . . . . .
         . . . . .
         `)
     basic.pause(200)
