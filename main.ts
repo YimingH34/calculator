@@ -1,8 +1,10 @@
 input.onButtonPressed(Button.A, function () {
     number_2 += 1
+    basic.showNumber(number_2)
 })
 input.onGesture(Gesture.TiltLeft, function () {
     number_1 += 1
+    basic.showNumber(number_1)
 })
 input.onGesture(Gesture.SixG, function () {
     basic.clearScreen()
@@ -34,6 +36,7 @@ input.onButtonPressed(Button.AB, function () {
 })
 input.onButtonPressed(Button.B, function () {
     number_2 += -1
+    basic.showNumber(number_2)
 })
 input.onGesture(Gesture.Shake, function () {
     subtrace = number_2 + number_1
@@ -58,6 +61,7 @@ input.onGesture(Gesture.Shake, function () {
 })
 input.onGesture(Gesture.TiltRight, function () {
     number_1 += -1
+    basic.showNumber(number_1)
 })
 let sum = 0
 let subtrace = 0
