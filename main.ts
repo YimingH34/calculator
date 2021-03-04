@@ -16,6 +16,7 @@ input.onGesture(Gesture.SixG, function () {
 input.onButtonPressed(Button.AB, function () {
     sum = number_2 + number_1
     basic.showNumber(number_2)
+    basic.pause(200)
     basic.showLeds(`
         . . # . .
         . . # . .
@@ -23,7 +24,9 @@ input.onButtonPressed(Button.AB, function () {
         . . # . .
         . . # . .
         `)
+    basic.pause(200)
     basic.showNumber(number_1)
+    basic.pause(200)
     basic.showLeds(`
         . . . . .
         # # # # #
@@ -41,14 +44,17 @@ input.onButtonPressed(Button.B, function () {
 input.onGesture(Gesture.Shake, function () {
     subtrace = number_2 + number_1
     basic.showNumber(number_2)
+    basic.pause(200)
     basic.showLeds(`
         . . . . .
         . . . . .
         # # # # #
-        . . . . .
+        . . # . .
         . . . . .
         `)
+    basic.pause(200)
     basic.showNumber(number_1)
+    basic.pause(200)
     basic.showLeds(`
         . . . . .
         # # # # #
