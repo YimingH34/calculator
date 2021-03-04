@@ -6,6 +6,10 @@ input.onGesture(Gesture.TiltLeft, function () {
 })
 input.onGesture(Gesture.SixG, function () {
     basic.clearScreen()
+    number_1 = 0
+    number_2 = 0
+    subtrace = 0
+    sum = 0
 })
 input.onButtonPressed(Button.AB, function () {
     sum = number_2 + number_1
@@ -55,8 +59,8 @@ input.onGesture(Gesture.Shake, function () {
 input.onGesture(Gesture.TiltRight, function () {
     number_1 += -1
 })
-let subtrace = 0
 let sum = 0
+let subtrace = 0
 let number_1 = 0
 let number_2 = 0
 number_2 = 0
